@@ -37,8 +37,10 @@
 	  When noticed I will send you an <strong>ENCRYPTED</strong> email with my personal signature, and you have to send the content back to me, to verify you are the owner of this key.
 	</p>
         <p>
-          To import, do
+          To import a key, do
 <pre><code>$ gpg --recv-keys [key-id]</code></pre>
+          Or if you want to import all of them, execute
+<pre><code>curl -sS http://pluspgp.phoenixlzx.com/ | grep -oP '(?<=<code>)0x[0-9a-fA-F]{8}(?=</code>)' | xargs gpg --recv-keys</code></pre>
         </p>
         <div>
           <table id="pgptable" class="tablesorter">
@@ -120,6 +122,10 @@
           </table>
         </div>
       </section>
+    </div>
+
+    <div class="footer">
+      <p>Maintained by <a href="https://github.com/phoenixlzx">phoenixlzx</a></p>
     </div>
 
     <script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script> 
