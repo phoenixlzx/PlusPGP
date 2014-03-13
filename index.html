@@ -16,7 +16,7 @@
     <header>
       <div class="container">
         <h1>PlusPGP</h1>
-        <h2>Google+ users PGP Signature collection</h2>
+        <h2>Google+ users PGP keys collection</h2>
 
         <section id="downloads">
           <a href="https://github.com/phoenixlzx/PlusPGP/zipball/master" class="btn">Download as .zip</a>
@@ -29,13 +29,18 @@
     <div class="container">
       <section id="main_content">
         <p>
-          (Under construction)
+          Google+ users' OpenPGP public keys. To import all of them, do
+          <code>
+            git clone https://github.com/phoenixlzx/PlusPGP.git
+            cd PlusPGP/
+            gpg --import *.asc  # Or specify the filename.
+          </code>
         </p>
         <div>
           <table id="pgptable" class="tablesorter">
             <thead>
               <tr>
-                <th><h1>+</h1></th>
+                <th>+</th>
                 <th>Key ID</th>
                 <th>PGP Server</th>
               </tr>
