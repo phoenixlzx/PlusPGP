@@ -33,7 +33,6 @@
 	  <ul>
 	    <li>Your pub key ID</li>
 	    <li>Corresponding Email address</li>
-	    <li>PGP server information</li>
 	  </ul>
 	  When noticed I will send you an <strong>ENCRYPTED</strong> Email with my personal signature, and you have to send the content back to me, to verify you are the owner of this key.
 	</p>
@@ -41,7 +40,7 @@
           To import all of them, do
 <pre><code>$ git clone https://github.com/phoenixlzx/PlusPGP.git
 $ cd PlusPGP/ && git checkout master
-$ gpg --import *.asc  # Or specify the filename.</code></pre>
+$ gpg --recv-keys [key-id]</code></pre>
         </p>
         <div>
           <table id="pgptable" class="tablesorter">
@@ -49,74 +48,74 @@ $ gpg --import *.asc  # Or specify the filename.</code></pre>
               <tr>
                 <th>+</th>
                 <th>Key ID</th>
-                <th>PGP Server</th>
+                <th>Fingerprint</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/u/0/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
+                  <a href="https://plus.google.com/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
                 </td>
                 <td>
                   <code>0x41C32BAB</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0x41C32BAB&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>A5D4 4F70 20A9 E2E7 4A5E 4F0D C366 2331 41C3 2BAB</code>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/u/0/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
+                  <a href="https://plus.google.com/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
                 </td>
                 <td>
                   <code>0xB067F2F5</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0xB067F2F5&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>10DD 5C88 A2D2 D591 71A9 FB0A 0586 CEA1 B067 F2F5</code>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/u/0/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
+                  <a href="https://plus.google.com/107142103119739092775" target="_blank">Phoenix Nemo (phoenixlzx)</a>
                 </td>
                 <td>
                   <code>0x47CD9E46</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0x47CD9E46&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>02E0 2B85 AF20 9AA0 0F78 4A1D D483 13B4 47CD 9E46</code>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/+FelixYan/about" target="_blank">Felix Yan (felixonmars)</a>
+                  <a href="https://plus.google.com/+FelixYan/" target="_blank">Felix Yan (felixonmars)</a>
                 </td>
                 <td>
                   <code>0x30D7CB92</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0x30D7CB92&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>B597 1F2C 5C10 A9A0 8C60 030F 786C 63F3 30D7 CB92</code>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/+FelixYan/about" target="_blank">Felix Yan (felixonmars)</a>
+                  <a href="https://plus.google.com/+FelixYan/" target="_blank">Felix Yan (felixonmars)</a>
                 </td>
                 <td>
                   <code>0x26A53B0D</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0x26A53B0D&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>C1E0 139C EF50 491C 6EDE 74FD FF26 25AC 26A5 3B0D</code>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://plus.google.com/+FelixYan/about" target="_blank">筱百合 (lilydjwg)</a>
+                  <a href="https://plus.google.com/105121709349802928154/" target="_blank">筱百合 (lilydjwg)</a>
                 </td>
                 <td>
                   <code>0x95FF0792</code>
                 </td>
                 <td>
-                  <a href="http://pgp.mit.edu/pks/lookup?search=0x95FF0792&op=index&fingerprint=on" target="_blank">pgp.mit.edu</a>
+                  <code>F905 932C 85D7 05FD 2A3C C9E4 7C63 3703 95FF 0792</code>
                 </td>
               </tr>              
             </tbody>
@@ -125,8 +124,8 @@ $ gpg --import *.asc  # Or specify the filename.</code></pre>
       </section>
     </div>
 
-    <script type="text/javascript" src="/javascripts/jquery-2.1.0.min.js"></script> 
-    <script type="text/javascript" src="/javascripts/jquery.tablesorter.min.js"></script> 
+    <script type="text/javascript" src="javascripts/jquery-2.1.0.min.js"></script> 
+    <script type="text/javascript" src="javascripts/jquery.tablesorter.min.js"></script> 
     <script type="text/javascript">
       $(document).ready(function() { 
         $("#pgptable").tablesorter(); 
