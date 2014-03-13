@@ -28,15 +28,20 @@
 
     <div class="container">
       <section id="main_content">
+	<p>
+	  Here is a list of PGP public keys currently collected. To submit your public key, mention me in a private post on Google+, which contains the following information:
+	  <ul>
+	    <li>Your pub key ID</li>
+	    <li>Corresponding Email address</li>
+	    <li>PGP server information</li>
+	  </ul>
+	  When noticed I will send you an <strong>ENCRYPTED</strong> Email with my personal signature, and you have to send the content back to me, to verify you are the owner of this key.
+	</p>
         <p>
-          Google+ users' OpenPGP public keys. To import all of them, do
-<pre>
-<code>
-~> git clone https://github.com/phoenixlzx/PlusPGP.git
-~> cd PlusPGP/
-~> gpg --import *.asc  # Or specify the filename.
-</code>
-</pre>
+          To import all of them, do
+<pre><code>$ git clone https://github.com/phoenixlzx/PlusPGP.git
+$ cd PlusPGP/
+$ gpg --import *.asc  # Or specify the filename.</code></pre>
         </p>
         <div>
           <table id="pgptable" class="tablesorter">
